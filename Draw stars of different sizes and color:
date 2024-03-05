@@ -1,0 +1,23 @@
+import turtle
+def draw_star(color, size, x, y):
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.color(color)
+    turtle.begin_fill()
+    for _ in range(5):
+        turtle.forward(size)
+        turtle.right(144)
+    turtle.end_fill()
+turtle.speed(10)
+turtle.fill()
+draw_star("red", 100, -200, 0)
+turtle_end_fill()
+draw_star("green", 80, 0, 100)
+draw_star("blue", 120, 200, -100)
+draw_star("yellow", 90, 10, 200)
+draw_star("purple", 100, 100, 90)
+draw_star("black", 100, 300, 25)
+draw_star("orange",100, -400,50)
+draw_star("grey", 99, -105, 150)
+turtle.done()
