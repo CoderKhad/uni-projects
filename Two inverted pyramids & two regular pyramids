@@ -1,0 +1,21 @@
+import turtle
+print("\nUpside down right-sided pyramid")
+for i in range(10):
+    x = '*'
+    x = x*(10-i)
+    print(f'{x:>30}')
+print("\nright sided pyramid")
+for i in range(10):
+    x='*'
+    x=x*i
+    print(f'{x:>30}')
+print("\nUpside down left-sided pyramid")
+for i in range(10):
+    x = '*'
+    x = x*(10-i)
+    print(f'{x:<30}')    
+print("\nleft sided pyramid")
+for i in range(10):
+    x='*'
+    x=x*i
+    print(f'{x:<30}')  
