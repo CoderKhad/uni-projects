@@ -1,0 +1,11 @@
+regular_pay_rate = 10  # Regular hourly pay rate
+overtime_multiplier = 1.5  # Overtime pay multiplier
+weekly_hours_worked = 60  # Number of hours worked in a week
+if weekly_hours_worked <= 40:
+    gross_pay = weekly_hours_worked * regular_pay_rate
+else:
+    regular_pay = 40 * regular_pay_rate
+    overtime_pay = (weekly_hours_worked - 40) * regular_pay_rate * overtime_multiplier
+    gross_pay = regular_pay + overtime_pay
+
+print(f"The employee's gross pay for the week is: ${gross_pay}")
