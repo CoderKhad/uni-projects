@@ -1,0 +1,9 @@
+def check_scholarship_eligibility(years_in_school, gpa):
+    if years_in_school >= 2 and gpa >= 3.5:
+        return "Congratulations! You qualify for a scholarship at Rutgers University."
+    else:
+        return "Sorry, you do not meet the criteria for the scholarship at Rutgers University."
+years_in_school = 2
+gpa = 3.8
+result = check_scholarship_eligibility(years_in_school, gpa)
+print(result)
