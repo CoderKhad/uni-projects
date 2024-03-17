@@ -1,0 +1,14 @@
+def print_names_in_alphabetical_order(name1, name2):
+    if name1 < name2:
+        print(name1)
+        print(name2)
+    else:
+        print(name2)
+        print(name1)
+
+# Main program
+name1 = “Khadija
+name2 = "Fleming"
+
+print("Names in alphabetical order:")
+print_names_in_alphabetical_order(name1, name2)
