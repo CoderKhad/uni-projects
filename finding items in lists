@@ -1,0 +1,20 @@
+def main():
+    prod_nums = ['V475', 'F987', 'Q143', 'R688', 'T455']
+    search1 = input('Enter a product number to search for: ')
+    search2 = input('Enter another product number to search for: ')
+
+    if search1 in prod_nums and search2 in prod_nums:
+        print(f'Both {search1} and {search2} were found in the list.')
+    elif search1 in prod_nums:
+        print(f'{search1} was found in the list, but {search2} was not.')
+    elif search2 in prod_nums:
+        print(f'{search2} was found in the list, but {search1} was not.')
+    else:
+        print(f'Neither {search1} nor {search2} was found in the list.')
+
+    if search1 == search2:
+        print(f'The two search items are the same: {search1}')
+    else:
+        print(f'The two search items are different: {search1} and {search2}')
+
+main()
